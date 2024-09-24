@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    color: white;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    height:100vh;
+}
+.bg-img{
+    background-image: url("https://metier-ukdmc.com/wp-content/uploads/2020/06/Destinations-shutterstock_77507119-1400x550.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px #222;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    position: relative;
+    
+    
+}
+.logo h1{
+    font-size: 24px;
+    font-weight: bold; 
+         
+}
+.nav-profile{
+    display: flex;
+    align-items: center; 
+}
+.nav-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile-info .profile-name{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.slidebar{
+    width: 300px;
+    height:600px;
+    justify-content: center;
+    padding: 5px 0px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    will-change: transform;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+        align-items: flex-start;
+    
+    backdrop-filter: blur(10px);
+
+}
+.dashboard{
+    position: fixed;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+
+}
+
+.menu{
+    color: #fff;
+    padding:20px;
+    position: relative;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.menu:hover::before{
+    transform: scale(1);
+}
+.slidebar ul{
+    padding: 0;
+    list-style-type:none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.slidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display:flex;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.slidebar ul li a:hover{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    color:rgb(0, 255, 34);
+    
+}
+.slidebar i{
+ align-items: center;
+ justify-content: center;
+    
+}
+.login-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    justify-content: center;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-color: rgb(51, 129, 27);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg,#225024,#9ae70c);
+}
